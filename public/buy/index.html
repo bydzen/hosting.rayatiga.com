@@ -16,6 +16,10 @@
         <link rel="icon" type="image/png" sizes="16x16" href="../asset/img/favicon-16x16.png" />
         <link rel="manifest" href="../asset/img/site.webmanifest" />
         <link href="../asset/css/main.css" rel="stylesheet" />
+        <link href="../asset/css/bootstrap.css" rel="stylesheet" />
+        <link href="../asset/css/aos.css" rel="stylesheet" />
+        <script src="../asset/js/bootstrap.js"></script>
+        <script src="../asset/js/aos.js"></script>
         <style>
             .lds-ring {
                 display: inline-block;
@@ -123,14 +127,19 @@
             </div>
         </nav>
         <main class="vh-100 bg-light d-flex flex-column justify-content-center align-items-center">
-            <h1 class="fw-bold">Checkouting...</h1>
-            <p>Please wait, you'll be redirected to WhatsApp Rayatiga Agency.</p>
-            <div class="lds-ring">
+            <h1 class="fw-bold" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">Checkouting...</h1>
+            <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                Please wait, you'll be redirected to WhatsApp Rayatiga Agency.
+            </p>
+            <div class="lds-ring" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                 <div></div>
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
         </main>
+        <script>
+            AOS.init()
+        </script>
     </body>
 </html>
