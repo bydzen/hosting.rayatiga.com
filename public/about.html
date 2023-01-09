@@ -37,8 +37,14 @@
         <link rel="manifest" href="asset/img/site.webmanifest" />
         <!-- Icon Bootstrap -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" />
-        <!-- Framework utama Bootstrap -->
+        <!-- Bootstrap, Animate.style, and External CSS -->
         <link href="asset/css/main.css" rel="stylesheet" />
+        <link href="asset/css/bootstrap.css" rel="stylesheet" />
+        <link href="asset/css/aos.css" rel="stylesheet" />
+
+        <!-- Script -->
+        <script src="asset/js/aos.js"></script>
+        <script src="asset/js/bootstrap.js"></script>
 
         <!-- CSS khusus untuk tentang.html -->
         <style>
@@ -122,8 +128,14 @@
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-6">
                         <div class="text-center my-5 heroBody">
-                            <h1 class="display-5 fw-bolder mb-3">Tentang Kami</h1>
-                            <p class="lead mb-5">
+                            <h1
+                                class="display-5 fw-bolder mb-3"
+                                data-aos="fade-up"
+                                data-aos-delay="0"
+                                data-aos-duration="1000">
+                                Tentang Kami
+                            </h1>
+                            <p class="lead mb-5" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                                 Mari jauh lebih mengenal kami. Bagaimana kami bekerja untuk anda, hingga apa misi kami
                                 dalam pelayanan yang kami berikan.
                             </p>
@@ -191,7 +203,12 @@
             <div class="container px-5 py-5">
                 <div class="row gx-5 justify-content-center">
                     <h2 class="fw-bolder text-center mt-5 mb-5">Apa saja layanan utama kami?</h2>
-                    <div class="card m-2 bg-light" style="width: 25rem">
+                    <div
+                        class="card m-2 bg-light"
+                        style="width: 25rem"
+                        data-aos="fade-up"
+                        data-aos-delay="0"
+                        data-aos-duration="1000">
                         <img src="asset/img/domainname.png" class="card-img mt-3" alt="logo-Rayatiga Hosting" />
                         <div class="card-body">
                             <h5 class="card-title">Domain Name</h5>
@@ -202,7 +219,12 @@
                             <a href="pricing.html#domainname" class="btn btn-outline-dark">Pilih Layanan</a>
                         </div>
                     </div>
-                    <div class="card m-2 bg-light" style="width: 25rem">
+                    <div
+                        class="card m-2 bg-light"
+                        style="width: 25rem"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                        data-aos-duration="1000">
                         <img
                             src="asset/img/managedcmswordpress.png"
                             class="card-img mt-3"
@@ -216,7 +238,12 @@
                             <a href="pricing.html#managedcmswordpress" class="btn btn-outline-dark">Pilih Layanan</a>
                         </div>
                     </div>
-                    <div class="card m-2 bg-light" style="width: 25rem">
+                    <div
+                        class="card m-2 bg-light"
+                        style="width: 25rem"
+                        data-aos="fade-up"
+                        data-aos-delay="400"
+                        data-aos-duration="1000">
                         <img src="asset/img/completewebsite.png" class="card-img mt-3" alt="logo-Rayatiga Hosting" />
                         <div class="card-body">
                             <h5 class="card-title">Complete Website</h5>
@@ -238,8 +265,12 @@
                     <div class="feature bg-dark text-light rounded-3 mb-5 px-5">
                         <i class="bi bi-envelope"></i>
                     </div>
-                    <h2 class="fw-bolder">Ada yang ingin ditanyakan?</h2>
-                    <p class="lead mb-0">Dengan senang hati, tim Rayatiga Hosting siap melayani anda.</p>
+                    <h2 class="fw-bolder" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
+                        Ada yang ingin ditanyakan?
+                    </h2>
+                    <p class="lead mb-0" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                        Dengan senang hati, tim Rayatiga Hosting siap melayani anda.
+                    </p>
                 </div>
                 <div class="text-center">
                     <a href="chat/index.html" target="_blank" rel="nofollow noopener noreferrer">
@@ -257,7 +288,8 @@
         </footer>
 
         <!-- Skrip lain-lain -->
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            AOS.init()
+        </script>
     </body>
 </html>
