@@ -1,6 +1,6 @@
 {
     "hosting": {
-        "public": "public",
+        "public": "rayatiga-hosting",
         "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
     }
 }
